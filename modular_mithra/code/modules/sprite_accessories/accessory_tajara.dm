@@ -1,5 +1,5 @@
 /datum/sprite_accessory/marking/taj
-	icon = 'modular_mithra/icons/mob/human_races/species/tajaran/markings.dmi'
+	icon = 'frontier/code/modules/species/station/tajara/sprite_body//markings.dmi'
 
 /datum/sprite_accessory/marking/taj/paw_socks_taj
 	name = "Socks Coloration (Taj)"

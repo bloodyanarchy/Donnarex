@@ -1,12 +1,12 @@
 /datum/species/tajaran
-	name = SPECIES_TAJ
+	name = SPECIES_TAJARA
 	name_plural = "Tajara"
-	icobase = 'modular_mithra/icons/mob/human_races/species/tajaran/body.dmi'
-	deform = 'modular_mithra/icons/mob/human_races/species/tajaran/deformed_body.dmi'
-	husk_icon = 'modular_mithra/icons/mob/human_races/species/tajaran/husk.dmi'
-	preview_icon = 'modular_mithra/icons/mob/human_races/species/tajaran/preview.dmi'
-	modular_tail = 'modular_mithra/icons/mob/human_races/species/tajaran/tail.dmi'
-	tail_animation = 'modular_mithra/icons/mob/human_races/species/tajaran/tail.dmi'
+	icobase = 'frontier/code/modules/species/station/tajara/sprites/body.dmi'
+	deform = 'frontier/code/modules/species/station/tajara/sprites/deformed_body.dmi'
+	husk_icon = 'frontier/code/modules/species/station/tajara/sprites/husk.dmi'
+	preview_icon = 'frontier/code/modules/species/station/tajara/sprites/preview.dmi'
+	modular_tail = 'frontier/code/modules/species/station/tajara/sprites/tail.dmi'
+	tail_animation = 'frontier/code/modules/species/station/tajara/sprites/tail.dmi'
 	tail = "tajtail"
 	default_h_style = "Tajaran Ears"
 	default_ears = /datum/sprite_accessory/ears/kittyhc
