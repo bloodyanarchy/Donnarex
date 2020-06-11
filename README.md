@@ -1,12 +1,11 @@
-# [RU]The Donnarex Project
+![](https://i.imgur.com/oWRp6D2.png)
 
+
+Полное переосмысление Baystation 12, основная задумка которого создание сервера от игроков для игроков.
+Наша цель вернуть былую атмосферу игры и привнести некоторые улучшения. В отличие от большинства других похожих билдов, у нас не вырезан клоун и имеется военка. Более подробная информация будет позже.
+Большинство идей, некоторый код, спрайты и другие вещи были взяты билдов перечисленных ниже.
 # CREDITS
-[Code of The Donnarex Project](https://github.com/AshtonFox/Donnarex) - [Code of The Fluffy Frontier](https://github.com/Low3/The-Fluffy-Frontier) - [Code of The Original BoH](https://github.com/BoHBranch/BoH-Bay) - [Code of Baystation12](https://github.com/Baystation12/Baystation12)
-
-[Discord](https://discord.gg/MQDs753)
-
-This is a fork of Baystation12's (And Bastion of Hestia's) code for BYOND on Space Station 13. Previously used on The Fluffy Frontier server, it was then replaced with another build and left idle. This splice was created to keep the build up-to-date, mainly counting on the Baystation12 repository and also on the BoH Branch.
-
+[Code of Tau Ceti Station](https://github.com/TauCetiStation/TauCetiClassic/) - [Code of TG/Station13](https://github.com/tgstation/tgstation) - [Code of Chaotic Opyx](https://github.com/ChaoticOnyx/OnyxBay) - [Code of infinitystation](https://github.com/infinitystation/Baystation12/) - [Code of Burgerstation](https://github.com/BurgerLUA/burgerstation) - [Code of Fallout13-NewDecade](https://github.com/iWuna/Fallout-13-NewDecade) - [Code of Soviet-Station](https://github.com/bloodyanarchy/soviet-station) - [Code of Sojourn-Station](https://github.com/sojourn-13/sojourn-station) - [Code of CEV ERIS](https://github.com/discordia-space/CEV-Eris) - [Code of The Donnarex Project](https://github.com/AshtonFox/Donnarex) - [Code of The Fluffy Frontier](https://github.com/Low3/The-Fluffy-Frontier) - [Code of The Original BoH](https://github.com/BoHBranch/BoH-Bay) - [Code of Baystation12](https://github.com/Baystation12/Baystation12)
 ---
 
 ### CONTRIBUTING GUIDELINES
