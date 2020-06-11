@@ -53,7 +53,6 @@
 			"Basketball Court"  = "basketball",
 			"Beach"             = "beach",
 			"Boxing Ring"       = "boxingcourt",
-			"Cafe"              = "cafe",
 			"Courtroom"         = "courtroom",
 			"Desert"            = "desert",
 			"Empty Court"       = "emptycourt",
@@ -64,7 +63,6 @@
 			"Theatre"           = "theatre",
 			"Thunderdome Court" = "thunderdomecourt",
 			"Voleyball Court"   = "voleyball",
-			"Bathhouse"         = "temple",
 			"Plaza"             = "plaza"
 		)
 

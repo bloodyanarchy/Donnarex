@@ -1,16 +1,19 @@
-<!-- 
-Do not forget to add a changelog when you have made admin/player facing changes that can alter gameplay.
-Examples which require a changelog entry include:
-* Adding/removing objects that players may interact with, or the way they function.
-* Adding/removing/altering admin tools.
-* Changing the map.
+<!--
+Не забудьте добавить файл-Changelog, создавая Pull Request. Шаблон: https://github.com/AshtonFox/Donnarex/blob/dev/html/changelogs/example.yml
 
-Examples were changelog entries are optional/not typically required:
-* Cosmetic changes such as descriptions, sound effects, etc.
-* Optimizations and other changes to underlying systems which do not affect gameplay.
-* Minor bug fixes.
+Краткое описание изменений в самом PR обязательно, так же как и наличие файла. Оформление в PR желательно, но не обязательно. Инструкцию по оформлению смотрите в самому низу.
 
-You'll find a README and example file in .\html\changelogs\ for further instructions.
+Приведите подробное описание изменений в окне Pull Request'а и основания для изменений, если вы делаете что-либо из этого:
+* Добавление или удаление объектов, с которыми могут взаимодействовать игроки, или изменение их функционала.
+* Добавление/удаление/изменения инструментов администрации.
+* Изменения карты.
 
-You can also find a template for adding your changelog directly to the PR description here: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation
+Примеры, когда подробное описание изменений не требуется:
+* Косметические изменения, такие как изменение описания, звука и т.п.
+* Оптимизация кода и другие "скрытые" изменения, не влияющие на геймплей.
+* Мелкие фиксы багов.
+
+Необходимые инструкции о том, куда и под каким именем поместить файл-Changelog, смотреть здесь: https://github.com/AshtonFox/Donnarex/blob/dev/html/changelogs/__CHANGELOG_README.txt
+
+Оформлениe окна PR: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation
 -->

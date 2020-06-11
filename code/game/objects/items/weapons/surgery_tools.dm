@@ -20,6 +20,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
+	var/wrapped = 0
 
 /*
  * Hemostat
@@ -34,6 +35,7 @@
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
 	attack_verb = list("attacked", "pinched")
+	var/wrapped = 0
 
 /*
  * Cautery
@@ -48,6 +50,7 @@
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
 	attack_verb = list("burnt")
+	var/wrapped = 0
 
 /*
  * Surgical Drill
@@ -64,6 +67,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
 	attack_verb = list("drilled")
+	var/wrapped = 0
 
 /*
  * Scalpel
@@ -85,6 +89,7 @@
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
 	matter = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 5000)
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	var/wrapped = 0
 
 /*
  * Researchable Scalpels
@@ -135,6 +140,7 @@
 	attack_verb = list("attacked", "slashed", "sawed", "cut")
 	sharp = 1
 	edge = 1
+	var/wrapped = 0
 
 //misc, formerly from code/defines/weapons.dm
 /obj/item/weapon/bonegel
@@ -144,6 +150,7 @@
 	force = 0
 	w_class = ITEM_SIZE_SMALL
 	throwforce = 1.0
+	var/wrapped = 0
 
 /obj/item/weapon/FixOVein
 	name = "FixOVein"
@@ -154,6 +161,7 @@
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 3)
 	w_class = ITEM_SIZE_SMALL
 	var/usage_amount = 10
+	var/wrapped = 0
 
 /obj/item/weapon/bonesetter
 	name = "bone setter"
@@ -165,3 +173,4 @@
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("attacked", "hit", "bludgeoned")
+	var/wrapped = 0

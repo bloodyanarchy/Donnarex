@@ -120,7 +120,7 @@
 			continue
 	//Multiz, have shadow do same
 	if(bound_overlay)
-		bound_overlay.visible_message(message, self_message, blind_message)
+		bound_overlay.visible_message(message, blind_message, range)
 
 // Show a message to all mobs and objects in earshot of this one
 // This would be for audible actions by the src mob
@@ -432,9 +432,9 @@
 		'html/spell-check.png',
 		'html/wrench-screwdriver.png',
 		'html/changelog.css',
-		'html/changelog.html'
+		'html/changelog_drex.html'
 		)
-	show_browser(src, 'html/changelog.html', "window=changes;size=675x650")
+	show_browser(src, 'html/changelog_drex.html', "window=changes;size=675x650")
 	if(prefs.lastchangelog != changelog_hash)
 		prefs.lastchangelog = changelog_hash
 		SScharacter_setup.queue_preferences_save(prefs)

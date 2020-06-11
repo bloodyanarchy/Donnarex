@@ -481,3 +481,11 @@
 
 	images -= powernet_markers
 	QDEL_NULL_LIST(powernet_markers)
+
+/client/proc/take_picture(var/atom/A in world)
+	set category = "Debug"
+	set name = "Save PNG"
+	set desc = "Opens a dialog to save a PNG of any object in the game."
+
+	if(!check_rights(R_DEBUG)) return
+	downloadImage(A)

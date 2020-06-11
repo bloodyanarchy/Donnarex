@@ -2,7 +2,7 @@
 
 /datum/computer_file/report/flight_plan
 	form_name = "DC109"
-	title = "Flight Plan"
+	title = "План Полета"
 	var/datum/report_field/people/leader     //Give these a special name for easier access.
 	var/datum/report_field/people/manifest
 	var/datum/report_field/planned_depart
@@ -18,14 +18,14 @@
 	return ..()
 
 /datum/computer_file/report/flight_plan/generate_fields()
-	add_field(/datum/report_field/text_label/instruction, "These fields are required:")
-	leader = add_field(/datum/report_field/people/from_manifest, "Leader", required = 1)
-	planned_depart = add_field(/datum/report_field/time, "Planned Departure", required = 1)
-	add_field(/datum/report_field/text_label/instruction, "These fields are optional:")
-	manifest = add_field(/datum/report_field/people/list_from_manifest, "Manifest")
-	add_field(/datum/report_field/pencode_text, "Objective")
-	add_field(/datum/report_field/time, "Expected Return/Contact Time")
-	add_field(/datum/report_field/simple_text, "Fuel Status")
+	add_field(/datum/report_field/text_label/instruction, "Обязательные поля:")
+	leader = add_field(/datum/report_field/people/from_manifest, "Командир", required = 1)
+	planned_depart = add_field(/datum/report_field/time, "Время отправления", required = 1)
+	add_field(/datum/report_field/text_label/instruction, "Необязательные поля:")
+	manifest = add_field(/datum/report_field/people/list_from_manifest, "Манифест")
+	add_field(/datum/report_field/pencode_text, "Цель")
+	add_field(/datum/report_field/time, "Ожидаемое время возвращения/контакта")
+	add_field(/datum/report_field/simple_text, "Данные о топливе")
 
 //These fields will be auto-set.
 /datum/computer_file/report/recipient/shuttle
@@ -44,14 +44,14 @@
 
 /datum/computer_file/report/recipient/shuttle/generate_fields()
 	..()
-	shuttle = add_field(/datum/report_field/simple_text, "Shuttle", required = 1)
+	shuttle = add_field(/datum/report_field/simple_text, "Шаттл", required = 1)
 	shuttle.can_edit = 0
-	mission = add_field(/datum/report_field/simple_text, "Mission", required = 1)
+	mission = add_field(/datum/report_field/simple_text, "Миссия", required = 1)
 	mission.can_edit = 0
 
 /datum/computer_file/report/recipient/shuttle/damage
 	form_name = "DC243"
-	title = "Post-flight Damage Assessment"
+	title = "Оценка Ущерба"
 
 /datum/computer_file/report/recipient/shuttle/damage/New()
 	..()
@@ -59,15 +59,15 @@
 
 /datum/computer_file/report/recipient/shuttle/damage/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/instruction, "Assess the damage sustained by the shuttle and its flight readiness.")
-	add_field(/datum/report_field/pencode_text, "Shuttle state on arrival")
-	add_field(/datum/report_field/simple_text, "Flight readiness")
-	add_field(/datum/report_field/pencode_text, "Repairs required")
-	add_field(/datum/report_field/time, "Estimated completion time")
+	add_field(/datum/report_field/text_label/instruction, "Оцените ущерб, нанесенный шаттлу, и его готовность к полету.")
+	add_field(/datum/report_field/pencode_text, "Состояние шаттла по прибытии")
+	add_field(/datum/report_field/simple_text, "Готовность к полету")
+	add_field(/datum/report_field/pencode_text, "Требующийся ремонт")
+	add_field(/datum/report_field/time, "Предполагаемое время завершения работ")
 
 /datum/computer_file/report/recipient/shuttle/fuel
 	form_name = "DC12"
-	title = "Post-flight Refueling Report"
+	title = "Отчет о Дозаправке"
 
 /datum/computer_file/report/recipient/shuttle/fuel/New()
 	..()
@@ -75,14 +75,14 @@
 
 /datum/computer_file/report/recipient/shuttle/fuel/generate_fields()
 	..()
-	add_field(/datum/report_field/simple_text, "Prior fuel level")
-	add_field(/datum/report_field/simple_text, "Current fuel level")
-	add_field(/datum/report_field/time, "Time of refueling")
-	add_field(/datum/report_field/pencode_text, "Additional notes")
+	add_field(/datum/report_field/simple_text, "Предыдущий уровень топлива")
+	add_field(/datum/report_field/simple_text, "Текущий уровень топлива")
+	add_field(/datum/report_field/time, "Время дозаправки топливом")
+	add_field(/datum/report_field/pencode_text, "Заметки")
 
 /datum/computer_file/report/recipient/shuttle/atmos
 	form_name = "DC245"
-	title = "Post-flight Atmospherics Assessment"
+	title = "Оценка Атмосферных Показателей"
 
 /datum/computer_file/report/recipient/shuttle/atmos/New()
 	..()
@@ -90,14 +90,13 @@
 
 /datum/computer_file/report/recipient/shuttle/atmos/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/instruction, "Assess the state of the shuttle's atmospherics system.")
-	add_field(/datum/report_field/pencode_text, "State of atmospherics supplies")
-	add_field(/datum/report_field/time, "Estimated time of exhaustion")
-	add_field(/datum/report_field/simple_text, "Supplies required")
+	add_field(/datum/report_field/text_label/instruction, "Оцените состояние атмосферной системы шаттла.")
+	add_field(/datum/report_field/pencode_text, "Состояние атмосферных запасов")
+	add_field(/datum/report_field/simple_text, "Необходимо пополнение")
 
 /datum/computer_file/report/recipient/shuttle/gear
 	form_name = "DC248b"
-	title = "Post-flight Emergency Supply Inventory; Summary Version"
+	title = "Инвентаризация Аварийного Снабжения; Сводная версия"
 
 /datum/computer_file/report/recipient/shuttle/gear/New()
 	..()
@@ -105,25 +104,25 @@
 
 /datum/computer_file/report/recipient/shuttle/gear/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/instruction, "Summarize the state of the shuttle's critical emergency supplies.")
-	add_field(/datum/report_field/pencode_text, "State of supplies on arrival")
-	add_field(/datum/report_field/pencode_text, "Supplies restocked")
-	add_field(/datum/report_field/time, "Time of restocking")
-	add_field(/datum/report_field/simple_text, "Flight readiness")
-	add_field(/datum/report_field/pencode_text, "Additional Notes")
+	add_field(/datum/report_field/text_label/instruction, "Суммируйте состояние критических-важных аварийных запасов шаттла.")
+	add_field(/datum/report_field/pencode_text, "Состояние запасов на момент прибытия")
+	add_field(/datum/report_field/pencode_text, "Пополненные запасы")
+	add_field(/datum/report_field/time, "Время пополнения")
+	add_field(/datum/report_field/simple_text, "Готовность к полету")
+	add_field(/datum/report_field/pencode_text, "Заметки")
 
 /datum/computer_file/report/recipient/shuttle/post_flight
 	form_name = "DC102"
-	title = "Standard Expedition Summary"
+	title = "Стандартное Резюме Экспедиции"
 	access_shuttle = 1
 
 /datum/computer_file/report/recipient/shuttle/post_flight/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/instruction, "Report on the expedition's findings, results, or outcomes.")
-	add_field(/datum/report_field/simple_text, "Locations visited")
-	add_field(/datum/report_field/simple_text, "General purpose of mission")
-	add_field(/datum/report_field/pencode_text, "Brief summary of activities")
-	add_field(/datum/report_field/pencode_text, "Crew status and casualties")
-	add_field(/datum/report_field/pencode_text, "Objects or materials returned")
-	add_field(/datum/report_field/pencode_text, "Recommended follow-up activities")
-	add_field(/datum/report_field/pencode_text, "Additional Notes")
+	add_field(/datum/report_field/text_label/instruction, "Доложите о результатах и выводах экспедиции.")
+	add_field(/datum/report_field/simple_text, "Посещенные места")
+	add_field(/datum/report_field/simple_text, "Общая цель миссии")
+	add_field(/datum/report_field/pencode_text, "Краткое описание деятельности")
+	add_field(/datum/report_field/pencode_text, "Состояние экипажа, жертвы")
+	add_field(/datum/report_field/pencode_text, "Собранные предметы или материалы")
+	add_field(/datum/report_field/pencode_text, "Рекомендуемые последующие мероприятия")
+	add_field(/datum/report_field/pencode_text, "Заметки")

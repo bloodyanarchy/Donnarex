@@ -49,6 +49,8 @@ lib/*.so
 *.pyc
 __pycache__
 
-# ignore prmirror stuff
-merge-upstream-pull-request.sh
-PRMirror-master/*
+# ignore custom items icons
+icons/mob/custom_items_mob.dmi
+icons/obj/custom_items_obj.dmi
+html/changelogs/generateblank.sh
+tools/GenerateChangelog/makeChangelog.bat

@@ -45,6 +45,8 @@
 		/obj/item/clothing/gloves/thick/duty/solgov/eng,
 		/obj/item/device/radio/headset/heads/ce,
 		/obj/item/device/radio/headset/heads/ce/alt,
+		/obj/item/clothing/under/rank/chief_engineer,
+		/obj/item/clothing/shoes/brown,
 		/obj/item/weapon/storage/belt/utility/full,
 		/obj/item/weapon/storage/belt/general,
 		/obj/item/clothing/suit/storage/hazardvest,

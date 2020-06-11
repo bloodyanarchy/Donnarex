@@ -9,7 +9,7 @@
 	tail_animation = 'modular_mithra/icons/mob/human_races/species/tajaran/tail.dmi'
 	tail = "tajtail"
 	default_h_style = "Tajaran Ears"
-	default_ears = /datum/sprite_accessory/ears/kittyhc
+	default_ears = /datum/sprite_accessory/ears/tajhc
 //	limb_blend = ICON_MULTIPLY
 //	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE

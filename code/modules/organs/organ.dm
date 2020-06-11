@@ -32,6 +32,9 @@ var/list/organ_cache = list()
 	var/can_be_printed = TRUE
 	var/print_cost
 
+	// If organ is wrapped by a gripper.
+	var/wrapped = 0
+
 /obj/item/organ/Destroy()
 	owner = null
 	dna = null

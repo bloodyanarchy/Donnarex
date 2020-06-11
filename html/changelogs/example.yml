@@ -1,38 +1,39 @@
 ################################
-# Example Changelog File
+# Образец файла чейнджлога
 #
-# Note: This file, and files beginning with ".", and files that don't end in ".yml" will not be read. If you change this file, you will look really dumb.
+# Примечание: этот файл и файлы, начинающиеся с ".", и файлы, которые не заканчиваются на ".yml" не будут прочитаны скриптом автогенерации. Если вы измените этот файл, вы будете выглядеть очень глупо.
 #
-# Your changelog will be merged with a master changelog. (New stuff added only, and only on the date entry for the day it was merged.)
-# When it is, any changes listed below will disappear.
+# Ваш список изменений будет объединен с главным списком изменений. (Датой изменения будет считаться дата генерации чейнджлога, что происходит на стороне держателя репозитория.)
+# Когда это произойдет, все перечисленные ниже изменения исчезнут (то есть, созданный вами файл чейнджлога будет удалён)
 #
-# Valid Prefixes: 
-#   bugfix
-#   wip (For works in progress)
-#   tweak
-#   soundadd
-#   sounddel
-#   rscadd (general adding of nice things)
-#   rscdel (general deleting of nice things)
-#   imageadd
-#   imagedel
-#   maptweak
-#   spellcheck (typo fixes)
-#   experiment
-#   admin
+# ПРЕФИКСЫ (используйте их для описания соответствующих сделанных изменений):
+#   bugfix (Тут понятно)
+#   wip (Для "сырых" версий чего-либо)
+#   soundadd (Добавление звука)
+#   sounddel (Удаление звука)
+#   rscadd (Общий префикс добавления)
+#   rscdel (Общий префикс удаления)
+#   imageadd (Добавление иконок)
+#   imagedel (Удаление иконок)
+#   tweak (Изменение чего-либо, что уже есть в билде)
+#   maptweak (Изменение карты)
+#   spellcheck (Исправление опечаток)
+#   experiment (Тестовое, вероятно временное, изменение)
+#   admin (Затрагивает инструменты администрации)
 #################################
 
-# Your name.  
+# Ваше имя.
 author: Unknown
 
-# Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
+# Это оставить как есть.
 delete-after: True
 
-# Any changes you've made.  See valid prefix list above.
-# INDENT WITH TWO SPACES.  NOT TABS.  SPACES.
-# SCREW THIS UP AND IT WON'T WORK.
-# Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
-# Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
-changes: 
+# Любые изменения, которые вы сделали. См. список допустимых префиксов выше. Краткость желательна, но не всегда выходит кратко, однако не стоит описывать каждый свой коммит или микро-изменение.
+# Изменение описаний должно быть на русском языке, кодировка файла - UTF-8.
+# ОТСТУПЫ В ДВА ПРОБЕЛА. НЕ ТАБУЛЯЦИЯ. ПРОБЕЛЫ.
+# В ПРОТИВНОМ СЛУЧАЕ, ОНО НЕ БУДЕТ РАБОТАТЬ.
+# Пожалуйста, заносите свои изменения в двойные кавычки ("), так как некоторые символы иначе испортят компиляцию. Кавычки не будут отображаться в списке изменений.
+# Этот файл может быть использован, как основа для вашего редактированного чейнджлога, при условии, что вы сохраните его под иным именем, как описано выше, и сотрёте все закомменченные участки (всё, кроме строк author, delete-after, changes, строк с префиксами).
+changes:
   - rscadd: "Added a changelog editing system that should cause fewer conflicts and more accurate timestamps."
   - rscdel: "Killed innocent kittens."

@@ -1125,8 +1125,8 @@
 
 /datum/seed/shand
 	name = "shand"
-	seed_name = "S'randar's hand"
-	display_name = "S'randar's hand leaves"
+	seed_name = "Rarkajar's hand"
+	display_name = "Rarkajar's hand leaves"
 	chems = list(/datum/reagent/bicaridine = list(0,10))
 	kitchen_tag = "shand"
 
@@ -1145,8 +1145,8 @@
 
 /datum/seed/mtear
 	name = "mtear"
-	seed_name = "Messa's tear"
-	display_name = "Messa's tear leaves"
+	seed_name = "Mephir's tear"
+	display_name = "Mephir's tear leaves"
 	chems = list(/datum/reagent/nutriment/honey = list(1,10), /datum/reagent/kelotane = list(3,5))
 	kitchen_tag = "mtear"
 

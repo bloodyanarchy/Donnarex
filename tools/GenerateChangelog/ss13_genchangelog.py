@@ -1,6 +1,6 @@
 '''
 Usage:
-    $ python ss13_genchangelog.py [--dry-run] html/changelog.html html/changelogs/
+    $ python ss13_genchangelog.py [--dry-run] html/changelog_drex.html html/changelogs/
 
 ss13_genchangelog.py - Generate changelog from YAML.
 
@@ -65,7 +65,7 @@ validPrefixes = [
 def dictToTuples(inp):
     return [(k, v) for k, v in inp.items()]
 
-changelog_cache = os.path.join(args.ymlDir, '.all_changelog.yml')
+changelog_cache = os.path.join(args.ymlDir, '.all_changelog_drex.yml')
 
 failed_cache_read = True
 if os.path.isfile(changelog_cache):

@@ -231,7 +231,7 @@ var/global/list/all_objectives = list()
 		"28 moles of phoron (full tank)" = /obj/item/weapon/tank,
 		"a sample of slime extract" = /obj/item/slime_extract,
 		"a piece of corgi meat" = /obj/item/weapon/reagent_containers/food/snacks/meat/corgi,
-		"a chief science officer's jumpsuit" = /obj/item/clothing/under/rank/research_director,
+		"a research director's jumpsuit" = /obj/item/clothing/under/rank/research_director,
 		"a chief engineer's jumpsuit" = /obj/item/clothing/under/rank/chief_engineer,
 		"a chief medical officer's jumpsuit" = /obj/item/clothing/under/rank/chief_medical_officer,
 		"a head of security's jumpsuit" = /obj/item/clothing/under/rank/head_of_security,
@@ -365,9 +365,9 @@ var/global/list/all_objectives = list()
 			target_amount = 4
 			loot = "four emitters"
 		if(4)
-			target = /obj/machinery/nuclearbomb
-			target_amount = 1
-			loot = "a nuclear bomb"
+			target = /obj/item/weapon/nuclear_cylinder
+			target_amount = 3
+			loot = "three nuclear cylinders"
 		if(5)
 			target = /obj/item/weapon/gun
 			target_amount = 6
@@ -425,7 +425,7 @@ var/global/list/all_objectives = list()
 
 /datum/objective/borer_reproduce
 	explanation_text = "Reproduce at least once."
-	
+
 /datum/objective/ninja_highlander
    explanation_text = "You aspire to be a Grand Master of the Spider Clan. Kill all of your fellow acolytes."
 

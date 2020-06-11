@@ -224,7 +224,7 @@
 
 // Returns the material to set the table to.
 /obj/structure/table/proc/common_material_remove(mob/user, material/M, delay, what, type_holding, sound)
-	if(!M.stack_type)
+	if((!M.stack_type) || holographic)
 		to_chat(user, "<span class='warning'>You are unable to remove the [what] from this table!</span>")
 		return M
 

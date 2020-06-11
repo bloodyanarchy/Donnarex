@@ -26,15 +26,17 @@
 	for(var/listener in listening_hosts)
 		var/mob/listening_mob = listener
 		var/client/t = listening_mob.get_client()
-		if(!t)
+		if((!t) || t.is_key_ignored(C.key))
 			continue
 		listening_clients |= t
 		var/received_message = t.receive_looc(C, key, message, listening_mob.looc_prefix())
+		received_message = emoji_parse(received_message)
 		receive_communication(C, t, received_message)
 
 	for(var/client/adm in GLOB.admins)	//Now send to all admins that weren't in range.
 		if(!(adm in listening_clients) && adm.get_preference_value(/datum/client_preference/staff/show_rlooc) == GLOB.PREF_SHOW)
 			var/received_message = adm.receive_looc(C, key, message, "R")
+			received_message = emoji_parse(received_message)
 			receive_communication(C, adm, received_message)
 
 /client/proc/receive_looc(var/client/C, var/commkey, var/message, var/prefix)
@@ -58,4 +60,3 @@
 	if(!eyeobj)
 		return src
 	return eyeobj
-

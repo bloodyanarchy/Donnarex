@@ -927,3 +927,6 @@ proc/generate_image(var/tx as num, var/ty as num, var/tz as num, var/range as nu
 
 	return cap
 
+/proc/downloadImage(atom/A, dir)
+	var/icon/this_icon = getFlatIcon(A,defdir=dir)
+	usr << ftp(this_icon,"[A.name].png")

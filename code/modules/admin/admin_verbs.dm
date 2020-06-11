@@ -45,6 +45,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/jumptoturf,			//allows us to jump to a specific turf,
 	/client/proc/admin_call_shuttle,	//allows us to call the emergency shuttle,
 	/client/proc/admin_cancel_shuttle,	//allows us to cancel the emergency shuttle, sending it back to centcomm,
+	/client/proc/end_round,             //allows us to end the current round immediately
 	/client/proc/cmd_admin_direct_narrate,	//send text directly to a player with no padding. Useful for narratives and fluff-text,
 	/client/proc/cmd_admin_visible_narrate,
 	/client/proc/cmd_admin_audible_narrate,
@@ -98,6 +99,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/add_trader,
 	/client/proc/remove_trader,
 	/datum/admins/proc/sendFax,
+	/client/proc/check_fax_history
 )
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,
@@ -142,7 +144,6 @@ var/list/admin_verbs_spawn = list(
 	)
 var/list/admin_verbs_server = list(
 	/datum/admins/proc/capture_map_part,
-	/client/proc/Set_Holiday,
 	/datum/admins/proc/startnow,
 	/datum/admins/proc/restart,
 	/datum/admins/proc/delay,
@@ -206,7 +207,8 @@ var/list/admin_verbs_debug = list(
 	/client/proc/visualpower,
 	/client/proc/visualpower_remove,
 	/client/proc/ping_webhook,
-	/client/proc/reload_webhooks
+	/client/proc/reload_webhooks,
+	/client/proc/take_picture
 	)
 
 var/list/admin_verbs_paranoid_debug = list(
@@ -243,6 +245,7 @@ var/list/admin_verbs_hideable = list(
 	/datum/admins/proc/access_news_network,
 	/client/proc/admin_call_shuttle,
 	/client/proc/admin_cancel_shuttle,
+	/client/proc/end_round,
 	/client/proc/cmd_admin_direct_narrate,
 	/client/proc/cmd_admin_visible_narrate,
 	/client/proc/cmd_admin_audible_narrate,
@@ -263,7 +266,6 @@ var/list/admin_verbs_hideable = list(
 	/client/proc/cmd_admin_create_centcom_report,
 	/client/proc/toggle_random_events,
 	/client/proc/cmd_admin_add_random_ai_law,
-	/client/proc/Set_Holiday,
 	/client/proc/cmd_admin_check_player_logs,
 	/datum/admins/proc/startnow,
 	/datum/admins/proc/restart,
@@ -312,6 +314,7 @@ var/list/admin_verbs_mod = list(
 	/client/proc/cmd_admin_direct_narrate,
 	/client/proc/aooc,
 	/datum/admins/proc/sendFax,
+	/client/proc/check_fax_history,
 	/datum/admins/proc/paralyze_mob,
 	/datum/admins/proc/view_persistent_data
 )

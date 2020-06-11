@@ -158,7 +158,6 @@ var/list/ai_verbs_default = list(
 	add_language(LANGUAGE_HUMAN_SELENIAN, 1)
 	add_language(LANGUAGE_UNATHI_SINTA, 1)
 	add_language(LANGUAGE_SKRELLIAN, 1)
-	add_language(LANGUAGE_GUTTER, 1)
 	add_language(LANGUAGE_SPACER, 1)
 	add_language(LANGUAGE_SIGN, 0)
 
@@ -205,6 +204,10 @@ var/list/ai_verbs_default = list(
 			radio_text += ", "
 
 	to_chat(src, radio_text)
+
+	//Prevents more than one active core spawning on the same tile. Technically just a sanitization for roundstart join
+	for(var/obj/structure/AIcore/deactivated/C in src.loc)
+		qdel(C)
 
 	if (GLOB.malf && !(mind in GLOB.malf.current_antagonists))
 		show_laws()

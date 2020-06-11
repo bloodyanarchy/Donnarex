@@ -39,6 +39,8 @@
 		/obj/item/clothing/suit/storage/toggle/labcoat/cmoalt,
 		/obj/item/device/radio/headset/heads/cmo,
 		/obj/item/device/radio/headset/heads/cmo/alt,
+		/obj/item/clothing/under/rank/chief_medical_officer,
+		/obj/item/clothing/shoes/brown,
 		/obj/item/device/flash,
 		/obj/item/weapon/gun/energy/confuseray,
 		/obj/item/device/megaphone,

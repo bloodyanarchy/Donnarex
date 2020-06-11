@@ -75,7 +75,7 @@
 	href_logfile = file("data/logs/[date_string] hrefs.htm")
 	diary = file("data/logs/[date_string].log")
 	diary << "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]"
-	changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
+	changelog_hash = md5('html/changelog_drex.html')					//used for telling if the changelog has changed recently
 
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
 		// dumb and hardcoded but I don't care~
@@ -591,9 +591,9 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://forums.baystation12.net/\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"https://discord.gg/MQDs753/\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
-	s += "Forums"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")"
 

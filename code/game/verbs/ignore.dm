@@ -1,7 +1,7 @@
 /client/verb/ignore(key_to_ignore as text)
 	set name = "Ignore"
 	set category = "OOC"
-	set desc = "Makes OOC and Deadchat messages from a specific player not appear to you."
+	set desc = "Makes OOC, LOOC and Deadchat messages from a specific player not appear to you."
 
 	if(!key_to_ignore)
 		return

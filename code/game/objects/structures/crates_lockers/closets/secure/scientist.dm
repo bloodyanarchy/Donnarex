@@ -33,7 +33,7 @@
 	)
 
 /obj/structure/closet/secure_closet/RD
-	name = "chief science officer's locker"
+	name = "research director's locker"
 	req_access = list(access_rd)
 	closet_appearance = /decl/closet_appearance/secure_closet/rd
 
@@ -43,6 +43,7 @@
 		/obj/item/clothing/head/bio_hood/scientist = 2,
 		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/shoes/white,
+		/obj/item/clothing/under/rank/research_director,
 		/obj/item/clothing/gloves/latex,
 		/obj/item/device/radio/headset/heads/rd,
 		/obj/item/clothing/mask/gas,

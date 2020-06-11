@@ -21,8 +21,6 @@
 			return global.Failsafe;
 		if("GLOB")
 			return global.GLOB;
-		if("Holiday")
-			return global.Holiday;
 		if("IClog")
 			return global.IClog;
 		if("LIGHTING_CORNER_DIAGONAL")
@@ -483,8 +481,6 @@
 			return global.gzn_check;
 		if("hadevent")
 			return global.hadevent;
-		if("hazard_overlays")
-			return global.hazard_overlays;
 		if("hivemind_bank")
 			return global.hivemind_bank;
 		if("holder_mob_icon_cache")
@@ -956,8 +952,6 @@
 			global.Failsafe=newval;
 		if("GLOB")
 			global.GLOB=newval;
-		if("Holiday")
-			global.Holiday=newval;
 		if("IClog")
 			global.IClog=newval;
 		if("LIGHTING_CORNER_DIAGONAL")
@@ -1418,8 +1412,6 @@
 			global.gzn_check=newval;
 		if("hadevent")
 			global.hadevent=newval;
-		if("hazard_overlays")
-			global.hazard_overlays=newval;
 		if("hivemind_bank")
 			global.hivemind_bank=newval;
 		if("holder_mob_icon_cache")
@@ -1880,7 +1872,6 @@
 	"Debug2",
 	"Failsafe",
 	"GLOB",
-	"Holiday",
 	"IClog",
 	"LIGHTING_CORNER_DIAGONAL",
 	"Master",
@@ -2111,7 +2102,6 @@
 	"gravity_is_on",
 	"gzn_check",
 	"hadevent",
-	"hazard_overlays",
 	"hivemind_bank",
 	"holder_mob_icon_cache",
 	"host",

@@ -72,9 +72,9 @@
  * EXECUTIVE OFFICER
  */
 /obj/item/weapon/rig/command/xo
-	name = "officer's command HCM"
+	name = "HoP's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to high ranking officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to Head of Personnel."
 	icon_state = "command_XO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -112,9 +112,9 @@
  * COMMANDING OFFICER
  */
 /obj/item/weapon/rig/command/co
-	name = "commanding officer's command HCM"
+	name = "captain's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to commanding officers of the Expeditionary Corps."
+	desc = "A specialized hardsuit rig control module issued to captains of NT Private Fleet."
 	icon_state = "command_CO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -304,6 +304,7 @@
 	name = "heavy exploration HCM"
 	suit_type = "heavy exploration hardsuit"
 	desc = "Expeditionary Corps' Exoplanet Exploration Armored Unit, A-Unit for short. Built for more hostile (and hungry) environments, it features additional armor and powered exoskeleton."
+	icon = 'frontier/maps/torch/icons/mob/onmob_suit_solgov.dmi'
 	icon_state = "command_exp_rig"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,

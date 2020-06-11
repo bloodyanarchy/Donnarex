@@ -13,6 +13,7 @@
 	base_type = /obj/machinery/vending/security
 	req_access = list(access_security)
 	products = list(
+		/obj/item/clothing/accessory/armband = 10,
 		/obj/item/clothing/accessory/armguards = 12,
 		/obj/item/clothing/accessory/armguards/navy = 8,
 		/obj/item/clothing/accessory/armguards/green = 8,

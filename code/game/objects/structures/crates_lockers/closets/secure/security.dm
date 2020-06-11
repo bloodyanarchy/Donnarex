@@ -73,6 +73,7 @@
 		/obj/item/clothing/head/helmet/nt,
 		/obj/item/clothing/suit/armor/vest/nt,
 		/obj/item/clothing/suit/storage/vest/nt/hos,
+		/obj/item/clothing/under/rank/head_of_security,
 		/obj/item/clothing/under/rank/head_of_security/jensen,
 		/obj/item/clothing/under/rank/head_of_security/corp,
 		/obj/item/clothing/suit/armor/hos/jensen,

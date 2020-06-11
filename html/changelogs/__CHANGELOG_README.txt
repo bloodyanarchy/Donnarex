@@ -1,19 +1,19 @@
-Changelogs are included with commits as text .yml files created individually by the committer. If you want to create a changelog entry you create a .yml file in the /changelogs directory; nothing else needs to be touched unless you are a maintainer.
+Чейнджлоги включаются в коммиты в виде текстовых .yml-файлов, самостоятельно включаемых разработчиком в PR. Если вы хотите создать запись в журнале изменений, вы создаете .yml-файл в каталоге /changelogs; больше ничего не нужно трогать.
 
 #######################################################
 
-TO MAKE A CHANGELOG .YML ENTRRY
+КАК ДЕЛАЕТСЯ ФАЙЛ ЧЕЙНДЖЛОГА .YML
 
-1. Make a copy of the file example.yml in html/changelogs and rename it to [YOUR USERNAME]-PR-[YOUR PR NUMBER].yml or [YOUR USERNAME]-[YOUR BRANCH NAME]. Only the username is strictly required, anything else is organizational and can be ignored if you so wish.
+1. Сделайте копию файла example.yml, находящегося html/changelogs и переименуйте его в формат [ЛОГИН GITHUB]-PR-[НОМЕР ВАШЕГО PR].yml или [ЛОГИН GITHUB]-[НАЗВАНИЕ ВАШЕГО БРАНЧА]. Строго требуется только имя пользователя, все остальное является организационным и может быть проигнорировано, если вы этого пожелаете.
 
-2. Change the author to yourself
+2. Измените значение в поле author: на нужное.
 
-3. Replace the changes text with a description of the changes in your PR, keep the double quotes to avoid errors (your changelog can be written ICly or OOCly, it doesn't matter)
+3. Впишите описания сделанных вами изменений.
 
-4. (Optional) set the change prefix (rscadd) to a different one listed above in example.yml (this affects what icon is used for your changelog entry)
+4. Установите нужные префиксы в соответствии с тем, как они перечислены в example.yml (это влияет на то, какая иконка будет в конечном чейнджлоге, чтобы читающему было проще ориентироваться)
 
-5. When commiting make sure your .yml file is included in the commit (it will usually be unticked as an unversioned file)
+5. При отправке коммита убедитесь, что в него включен файл .yml (поставьте напротив него галочку, если пользуетесь GitDesktop)
 
 #######################################################
 
-If you have trouble ask for help in #codershuttle on irc.sorcery.net or read https://tgstation13.org/wiki/Guide_to_Changelogs
+В случае возникновения проблем, свяжитесь с разработчиками в Discord-канале https://discord.gg/MQDs753

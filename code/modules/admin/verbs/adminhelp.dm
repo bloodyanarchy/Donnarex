@@ -7,6 +7,8 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 	var/list/forenames = list()
 	var/list/ckeys = list()
 
+	msg = emoji_parse(msg)
+
 	//explode the input msg into a list
 	var/list/msglist = splittext(msg, " ")
 
@@ -138,4 +140,3 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 
 	SSstatistics.add_field_details("admin_verb","AH") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	return
-
